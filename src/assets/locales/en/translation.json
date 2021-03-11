@@ -1,5 +1,10 @@
 {
   "main": {
     "main": "Main"
+  },
+  "header": {
+    "main": "Main",
+    "country": "Сountry",
+    "search": "Search"
   }
 }
