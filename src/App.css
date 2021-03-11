@@ -1,0 +1,25 @@
+.container {
+  width: 100vW;
+  height: 100vh;
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+}
+
+.container__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+}
+
+.container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15%;
+}
