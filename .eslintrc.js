@@ -6,7 +6,7 @@ module.exports = {
     browser: true,
   },
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 12,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
@@ -19,6 +19,8 @@ module.exports = {
     'linebreak-style': 0,
     'react/button-has-type': 0,
     'no-param-reassign': 0,
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prop-types': 'off',
   },
   settings: {
     react: {
@@ -27,6 +29,7 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.native.js'],
+        moduleDirectory: ['node_modules', 'src/'],
       },
     },
   },
