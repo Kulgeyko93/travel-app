@@ -5,11 +5,11 @@ import Main from './pages/Main/Main';
 import Country from './pages/Country/Country';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
-    <Container>
+    <Container className="container__body" fluid>
       <Row className="container__header">
         <Header />
       </Row>
