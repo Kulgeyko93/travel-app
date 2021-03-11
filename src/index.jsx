@@ -6,6 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import appStore from './store/appStore';
 import * as serviceWorker from './serviceWorker';
+import { fetchCountries } from './features/countries/countriesSlice';
+
+appStore.dispatch(fetchCountries());
 
 ReactDOM.render(
   <React.StrictMode>

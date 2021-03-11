@@ -2,10 +2,11 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
 import Main from './pages/Main/Main';
-import Country from './pages/Country/Country';
+import Country from './features/country/Country';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
         <main className="main">
           <Switch>
             <Route exact path="/" component={Main} />
-            <Route path="/Country" component={Country} />
+            <Route exact path="/countries/:countryId" component={Country} />
           </Switch>
         </main>
       </Row>

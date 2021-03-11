@@ -1,19 +1,14 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import reducers from './reducers/reducers';
-// import rootReducer from './reducers';
-
-const middleware = getDefaultMiddleware({
-  immutableCheck: false,
-  serializableCheck: false,
-  thunk: true,
-});
+import countryReducer from '../features/country/countrySlice';
+import countriesReducer from '../features/countries/countriesSlice';
 
 const appStore = configureStore({
   reducer: {
     main: reducers,
+    country: countryReducer,
+    countries: countriesReducer,
   },
-  middleware,
-  devTools: true,
 });
 
 export default appStore;
