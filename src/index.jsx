@@ -7,6 +7,9 @@ import App from './App';
 import appStore from './store/appStore';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { fetchCountries } from './features/countries/countriesSlice';
+
+appStore.dispatch(fetchCountries());
 
 ReactDOM.render(
   <React.StrictMode>
