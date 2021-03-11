@@ -1,26 +1,20 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Image, Spinner } from 'react-bootstrap';
-import {
-  fetchCountry,
-  selectCountryStatus,
-  selectCountryError,
-  selectCountryData,
-} from './countrySlice';
+import { fetchCountry, selectCountryStatus, selectCountryError, selectCountryData } from './countrySlice';
 import { statuses } from '../constants';
 
 export default function Country(props) {
   const { match } = props;
   const { countryId } = match.params;
   const dispatch = useDispatch();
-  const stableDispatch = useCallback(dispatch, []);
   const countryStatus = useSelector(selectCountryStatus);
   const countryData = useSelector(selectCountryData);
   const countryError = useSelector(selectCountryError);
 
   useEffect(() => {
-    stableDispatch(fetchCountry(countryId));
-  }, [stableDispatch, countryId]);
+    dispatch(fetchCountry(countryId));
+  }, [dispatch, countryId]);
 
   let content = null;
   if (countryStatus === statuses.LOADING) {
