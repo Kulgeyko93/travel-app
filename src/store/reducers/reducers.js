@@ -3,7 +3,7 @@ import { setLang, setCountry } from '../actions/actions';
 
 const initialState = {
   lang: 'en',
-  country: 'minsk',
+  country: 'spain',
 };
 
 const reducers = createReducer(initialState, {
