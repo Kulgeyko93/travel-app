@@ -4,7 +4,7 @@ import { Image, Spinner } from 'react-bootstrap';
 import { fetchCountry, selectCountryStatus, selectCountryError, selectCountryData } from './countrySlice';
 import { statuses } from '../constants';
 
-export default function Country(props) {
+export default function Countryy(props) {
   const { match } = props;
   const { countryId } = match.params;
   const dispatch = useDispatch();
