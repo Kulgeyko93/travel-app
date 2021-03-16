@@ -1,6 +1,7 @@
 {
   "main": {
     "main": "Main",
+    "to": "To page",
     "brazil": {
       "capital": "Brasilia",
       "name": "Brazil",
@@ -56,7 +57,7 @@
       "galery5": "Royal Botanic Gardens of Sydney Located in the business district of Sydney - a green corner of nature among the skyscrapers. The garden area is 30 hectares. The land in this area is not fertile and is not suitable for food crops. The Australian authorities decided to collect plants from all over the country here. Now there are nearly 9,000 plant species and 5,000 trees. The entrance to the garden is free. It is visited by about 3.5 million people a year.",
       "description": "the state of the British Commonwealth in the Southern Hemisphere, occupying the entire surface of the mainland Australia, the island of Tasmania and several islands in the Pacific and Indian Ocean. Its area is 7.6 million km2, 5% of the entire earth's land, it is the sixth largest in the world. On the territory of the mainland, diverse nature is adjacent to modern densely populated megacities. Although most of the continent is semi-desert and desert, Australia has a variety of landscapes, from alpine meadows to tropical jungles. Australia has become home to unique species of flora and fauna, some of which are not found in other parts of the world."
     },
-    "england ": {
+    "england": {
       "capital": "London",
       "name": "England",
       "galery0": "Tower Bridge One of the main and recognizable landmarks of the capital of England. The suspension drawbridge is used daily by over 40,000 people to get to the other side of the Thames. The total length of the bridge is 244 meters. The towers are 65 meters high. At a height of 44 meters, there is a gallery between the towers, it is used as an observation and museum platform. There are lifting wings between the towers. They are bred about 4-5 times a week.",
@@ -67,7 +68,7 @@
       "galery5": "Wallaton Hall (Nottingham) Renaissance palace. At the beginning of the 20th century, the Nottingham authorities bought the building and placed there a natural history museum. The palace is located in a 500-acre park with a picturesque lake. The park is famous for its inhabitants - deer, squirrels, swans, fallow deer are found there. Everyone is free to walk around the park. Anyone can see them and take an unusual photo - a herd of deer against the background of the Elizabethan Palace.",
       "description": "England is not an independent state. It is a large administrative and political part of the United Kingdom of Great Britain and Northern Ireland. The largest cities in England are Sheffield, Birmingham, Manchester and Liverpool. It also includes the capital of Great Britain, London. England is located on the island of Great Britain and occupies 2/3 of its territory with an area of ​​130 395 sq. Km. Neighbors of the administrative part of the country are Scotland and Wales."
     },
-    "ireland": {
+    "irland": {
       "capital": "Dublin",
       "name": "Irand",
       "galery0": "The Book of Kells A unique manuscript created in the 9th century, an invaluable work of art from the Early Middle Ages. The book is richly decorated with miniatures, patterns and Celtic designs. The priceless manuscript has been in the Trinity College Library since the 17th century. The book survived the devastating period of the Norman and Viking invasions of the British Isles and was treasured throughout the Middle Ages in the Abbey of Kells.",
@@ -78,9 +79,6 @@
       "galery5": "Samuel Beckett Bridge A 2009 cable-stayed bridge that connects the banks of the River Liffey. The structure is 128 meters long and 48 meters wide. Interestingly, the details of the bridge were collected in Holland and transported to Ireland. The structure quickly became a popular landmark for its gracefulness and harp-like appearance. Pedestrian and car traffic is open on the bridge, and work is underway to lay tram lines.",
       "description": "The country is officially called the Republic of Ireland. The state is located in the northern part of Europe and occupies most of the island of the same name. The state, the capital of which is Dublin, borders Northern Ireland. Part of the insular northern country is located on small islands adjacent to a large island. From different sides of the territory"
     },
-
-
-
     "france": {
       "capital": "Paris",
       "name": "France",

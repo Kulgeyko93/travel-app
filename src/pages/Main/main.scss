@@ -17,13 +17,41 @@
 
 .main__page {
   width: 100%;
-  // height: 100vh;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .slider_component {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 20px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      img {
+        width: 60%;
+        height: 60%;
+      }
+    }
 
-img {
-  width: 100%;
-  height: 100%
+    h2 {
+      text-align: center;
+    }
+  }
+  .route__btn {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    .btn {
+      width: 100%;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 const data = {
   brazil: {
     name: 'Brazil',
-    imageUrl: 'https://goodtimetravel.ru/wp-content/uploads/2019/10/gavan_rio_de_zhaneyro_2.jpg',
+    imageUrl: 'https://pix10.agoda.net/geo/country/207/3_207_brazil_02.jpg?s=1920x',
     videoUrl: '5STHnV-ZRfE',
     galery: [
       {
@@ -52,7 +52,7 @@ const data = {
   spain: {
     name: 'Spain',
     imageUrl: 'https://abstour.by/upload/iblock/39b/39b113eee670389355bc92b6be574b44.jpg',
-    videoUrl: 'https://www.youtube.com/watch?v=clnt7kk6rIU',
+    videoUrl: 'clnt7kk6rIU',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2014/09/hram-sviatogo-semeistva.jpg',
@@ -77,7 +77,7 @@ const data = {
   usa: {
     name: 'USA',
     imageUrl: 'https://aif-s3.aif.ru/images/021/486/ee42297d09cbe676f8580c86b2d603c2.jpg',
-    videoUrl: 'https://www.youtube.com/watch?v=yRJFLKm7-Nk',
+    videoUrl: 'yRJFLKm7-Nk',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2014/09/statuya-svobody.jpg',
@@ -102,7 +102,7 @@ const data = {
   australia: {
     name: 'Australia',
     imageUrl: 'https://kipmu.ru/wp-content/uploads/avstrlya-696x440.jpg',
-    videoUrl: 'https://www.youtube.com/watch?v=zJvCrUlzSvc',
+    videoUrl: 'zJvCrUlzSvc',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2014/12/bolshoy-barierniy-rif.jpg',
@@ -128,7 +128,7 @@ const data = {
     name: 'England',
     imageUrl:
       'https://n1s1.hsmedia.ru/0d/c3/bc/0dc3bc2381a2e155424ca7a682419ada/620x462_1_94ce4a400cea100bb26d548921ee012f@1000x745_0xac120003_13763038881563803374.jpg',
-    videoUrl: 'https://www.youtube.com/watch?v=ZS2v51y8TiU',
+    videoUrl: 'ZS2v51y8TiU',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2015/05/tauerskij-most-1.jpg',
@@ -150,10 +150,11 @@ const data = {
       },
     ],
   },
-  ireland: {
+  irland: {
     name: 'Irland',
-    imageUrl: 'https://www.svoiludi.ru/images/tb/13800/puteshestvie-po-strane-keltov-tur-14988417544745_w687h357.jpg',
-    videoUrl: 'https://www.youtube.com/watch?v=ZbNZYm87kE',
+    imageUrl:
+      'https://otdyhateli.com/wp-content/uploads/2016/03/ci-travel-channel-ashford-castle-ireland.jpg.rend_.hgtvcom.966.725.jpeg',
+    videoUrl: 'u-UA8t2EVpA',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2017/02/kellskaya-kniga.jpg',
@@ -178,7 +179,7 @@ const data = {
   france: {
     name: 'France',
     imageUrl: 'https://www.biletik.aero/upload/resize_cache/format_converted/0174a292e2ce40327282349518386ec2.webp',
-    videoUrl: 'https://www.youtube.com/watch?v=8f2tVaHQumM',
+    videoUrl: '8f2tVaHQumM',
     galery: [
       {
         img: 'https://top10.travel/wp-content/uploads/2014/09/eyfeleva-bashnya.jpg',

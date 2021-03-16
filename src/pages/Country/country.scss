@@ -6,6 +6,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  .spinner-border {
+    margin-top: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
   &__main-info {
     display: flex;
     justify-content: space-around;
@@ -42,3 +48,4 @@
     margin-top: 20px 
   }
 }
+

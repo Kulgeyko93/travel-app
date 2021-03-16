@@ -1,9 +1,10 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { setLang, setCountry } from '../actions/actions';
+import { setLang, setCountry, setIndexSlideCountry } from '../actions/actions';
 
 const initialState = {
   lang: 'en',
   country: 'brazil',
+  indexCountry: 0,
 };
 
 const reducers = createReducer(initialState, {
@@ -12,6 +13,9 @@ const reducers = createReducer(initialState, {
   },
   [setCountry]: (state, action) => {
     state.country = action.payload;
+  },
+  [setIndexSlideCountry]: (state, action) => {
+    state.indexCountry = action.payload;
   },
 });
 
