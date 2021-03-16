@@ -14,13 +14,13 @@ import './i18n';
 appStore.dispatch(fetchCountries());
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <Provider store={appStore}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root'),
 );
 

@@ -1,0 +1,51 @@
+.country {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .spinner-border {
+    margin-top: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__main-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 50px;
+
+    &__img {
+      width: 33%;
+      height: 100%;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    &__info {
+      width: 65%;
+      .text {
+        font-size: 0.7 em;
+        font-weight: 600;
+        text-align: justify;
+      }
+    }
+  }
+  
+  &__galary {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px 
+  }
+  
+  .video {
+    margin-top: 20px 
+  }
+}
+
