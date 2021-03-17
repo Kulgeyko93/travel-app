@@ -11,8 +11,6 @@ import { fetchCountries } from './features/countries/countriesSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './i18n';
 
-appStore.dispatch(fetchCountries());
-
 ReactDOM.render(
   <>
     <Provider store={appStore}>

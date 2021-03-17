@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://travel-app-demo.herokuapp.com';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 axios.interceptors.request.use(
   function handleRequest(config) {

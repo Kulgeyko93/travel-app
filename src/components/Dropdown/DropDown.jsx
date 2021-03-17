@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { setLang } from '../../store/actions/actions';
-// import { countryAction } from '../../store/reducers/countryReducer';
 
 const DropDown = () => {
   const { i18n } = useTranslation();
@@ -16,8 +15,6 @@ const DropDown = () => {
     const lang = lng || 'en';
     i18n.changeLanguage(lang);
     setLanguage(lang);
-    // const setGameSettings = (lngToSet) => dispatch(setLanguage(lngToSet));
-    // setParamToStorage('lang', lang);
   };
   return (
     <DropdownButton id="dropdown-basic-button" title={language}>
@@ -25,7 +22,7 @@ const DropDown = () => {
       <Dropdown.Divider />
       <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('ru')}>Russian</Dropdown.Item>
       <Dropdown.Divider />
-      <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('fr')}>French</Dropdown.Item>
+      <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('uz')}>Uzbek</Dropdown.Item>
     </DropdownButton>
   );
 };

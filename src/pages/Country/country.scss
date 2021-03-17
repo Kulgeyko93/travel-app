@@ -6,11 +6,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  .spinner-border {
-    margin-top: 50%;
-    width: 200px;
-    height: 200px;
-  }
 
   &__main-info {
     display: flex;
@@ -37,15 +32,15 @@
       }
     }
   }
-  
+
   &__galary {
     width: 100%;
     height: 100%;
-    margin-top: 20px 
+    margin-top: 20px
   }
-  
+
   .video {
-    margin-top: 20px 
+    margin-top: 20px
   }
 }
 

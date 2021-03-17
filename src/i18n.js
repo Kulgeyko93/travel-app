@@ -5,6 +5,7 @@ import Backend from 'i18next-http-backend';
 
 import translationEN from './assets/locales/en/translation.json';
 import translationRU from './assets/locales/ru/translation.json';
+import translationUZ from './assets/locales/uz/translation.json';
 
 const resources = {
   en: {
@@ -12,6 +13,9 @@ const resources = {
   },
   ru: {
     translation: translationRU,
+  },
+  uz: {
+    translation: translationUZ,
   },
 };
 
@@ -26,7 +30,7 @@ i18n
     interpolation: {
       escapeValue: false,
     },
-    supportedLngs: ['en', 'ru', 'be'],
+    supportedLngs: ['en', 'ru', 'uz'],
   });
 
 export default i18n;
