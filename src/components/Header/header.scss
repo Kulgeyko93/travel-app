@@ -1,5 +1,10 @@
 .navbar {
   width: 100%;
+  align-items: center;
+}
+
+.mr-rd {
+  margin-right: 10px;
 }
 
 .form {
@@ -7,6 +12,7 @@
   border: 2px solid blue;
 }
 
-.lang {
-  margin-right: 10px;
+.form > .form-row {
+  max-width: 335px;
+  margin-right: 5px;
 }
