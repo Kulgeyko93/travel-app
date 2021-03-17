@@ -17,7 +17,7 @@ const App = () => {
         <Row className="container__main">
           <Switch>
             <Route exact path="/" component={Main} />
-            <Route path="/country" component={Country} />
+            <Route path="/country/:name" component={Country} />
           </Switch>
         </Row>
         <Row className="container__footer">

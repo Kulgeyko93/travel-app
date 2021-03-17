@@ -1,59 +1,73 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Gallery from 'react-grid-gallery';
 import Spinner from 'react-bootstrap/Spinner';
 import { useTranslation } from 'react-i18next';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
-import data from '../../data';
 import './country.scss';
+import { fetchCountry, selectCountryData, selectCountryStatus } from '../../features/country/countrySlice';
+import { statuses } from '../../features/constants';
 
-const Country = () => {
+const Country = (props) => {
+  const { match } = props;
+  const { name } = match.params;
+  const dispatch = useDispatch();
+  const countryStatus = useSelector(selectCountryStatus);
+  const countryData = useSelector(selectCountryData);
+
   const { t } = useTranslation();
   const country = useSelector((state) => state.main.country);
 
   const [isLoad, setIsLoad] = useState(false);
 
-  const { imageUrl, galery, videoUrl } = data[`${country}`];
-
-  const GALARY = galery.map((item, index) => {
-    return {
-      src: item.img,
-      thumbnail: item.img,
-      thumbnailWidth: 100,
-      thumbnailHeight: 50,
-      isSelected: true,
-      caption: t(`main.${country}.galery${index}`),
-    };
-  });
+  useEffect(() => {
+    dispatch(fetchCountry(name));
+  }, [dispatch, name]);
 
   useEffect(() => {
     setTimeout(() => setIsLoad(true), 1000);
-  }, [country]);
+  }, [name]);
 
-  return (
-    <div className="country">
-      {!isLoad ? (
-        <Spinner animation="border" variant="success" />
-      ) : (
-        <>
-          <div className="country__main-info">
-            <div className="country__main-info__img">
-              <img src={imageUrl} alt={`country-${country}`} />
-            </div>
-            <div className="country__main-info__info">
-              <div className="text">{t(`main.${country}.description`)}</div>
-            </div>
+  let content = null;
+  if (countryStatus === statuses.LOADING || !isLoad) {
+    content = <Spinner animation="border" variant="primary" />;
+  } else if (countryStatus === statuses.SUCCEEDED) {
+    const { imageUrl, gallery, videoUrl } = countryData;
+
+    const GALLERY = gallery.map((item, index) => {
+      return {
+        src: item.img,
+        thumbnail: item.img,
+        thumbnailWidth: 100,
+        thumbnailHeight: 50,
+        isSelected: true,
+        caption: t(`main.${country}.galery${index}`),
+      };
+    });
+
+    content = (
+      <>
+        <div className="country__main-info">
+          <div className="country__main-info__img">
+            <img src={imageUrl} alt={`country-${country}`} />
           </div>
-          <div className="country__galary">
-            <Gallery images={GALARY} enableLightbox backdropClosesModal />
+          <div className="country__main-info__info">
+            <div className="text">{t(`main.${country}.description`)}</div>
           </div>
-          <div className="video">
-            <VideoPlayer videoId={videoUrl} />
-          </div>
-        </>
-      )}
-    </div>
-  );
+        </div>
+        <div className="country__galary">
+          <Gallery images={GALLERY} enableLightbox backdropClosesModal />
+        </div>
+        <div className="video">
+          <VideoPlayer videoId={videoUrl} />
+        </div>
+      </>
+    );
+  } else if (countryStatus === statuses.FAILED) {
+    content = t('messages.error');
+  }
+
+  return <div className="country">{content}</div>;
 };
 
 export default Country;

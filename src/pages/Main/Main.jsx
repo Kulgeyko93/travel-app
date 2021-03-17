@@ -25,16 +25,16 @@ const Main = () => {
     content = <Spinner animation="border" variant="primary" />;
   } else if (countriesStatus === statuses.SUCCEEDED) {
     const cardElements = countriesData.map((country) => {
-      const countryName = t(`main.${country.name.toLowerCase()}.name`);
-      const capitalName = t(`main.${country.name.toLowerCase()}.capital`);
+      const key = country.name.toLowerCase();
+      const countryName = t(`main.${key}.name`);
+      const capitalName = t(`main.${key}.capital`);
       return (
         <Card key={country.name}>
           <Img variant="top" src={country.imageUrl} />
           <Body>
             <Title>{countryName}</Title>
             <Text>{capitalName}</Text>
-            <NavLink to="/">{}</NavLink>
-            <Button variant="primary">{t('messages.learn_more')}</Button>
+            <NavLink to={`/country/${key}`}>{t('messages.learn_more')}</NavLink>
           </Body>
         </Card>
       );

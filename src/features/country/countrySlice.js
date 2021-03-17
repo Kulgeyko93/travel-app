@@ -8,8 +8,8 @@ const initialState = {
   error: null,
 };
 
-export const fetchCountry = createAsyncThunk('country/fetchCountry', async (countryId) => {
-  const response = await api.get(`/countries/${countryId}`);
+export const fetchCountry = createAsyncThunk('country/fetchCountry', async (name) => {
+  const response = await api.get(`/countries/${name}`);
   return response.data;
 });
 
