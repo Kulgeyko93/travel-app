@@ -22,7 +22,7 @@ const DropDown = () => {
       <Dropdown.Divider />
       <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('ru')}>Russian</Dropdown.Item>
       <Dropdown.Divider />
-      <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('fr')}>French</Dropdown.Item>
+      <Dropdown.Item onSelect={(eventKey, e) => changeLanguage('uz')}>Uzbek</Dropdown.Item>
     </DropdownButton>
   );
 };
