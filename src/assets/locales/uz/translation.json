@@ -95,10 +95,20 @@
     "main":"Asosiy",
     "country":"Mamlakat",
     "search":"Izlash",
-    "login": "Kirish"
+    "auth": "Avtorizatsiya",
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish"
   },
   "messages":{
     "error":"Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
     "learn_more":"Batafsil"
+  },
+  "auth": {
+    "username": "Ismingiz",
+    "enter_username": "Ismingizni kiriting",
+    "password": "Parol",
+    "enter_password": "Parolni kiriting",
+    "confirm_password": "Parolni tasdiqlash",
+    "upload": "Foto yuklash"
   }
 }

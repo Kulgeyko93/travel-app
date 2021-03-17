@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { Button, Card, CardDeck, Spinner } from 'react-bootstrap';
+import { Card, CardDeck, Spinner } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { fetchCountries, selectCountriesStatus, selectCountriesData } from '../../features/countries/countriesSlice';
 import { statuses } from '../../features/constants';
