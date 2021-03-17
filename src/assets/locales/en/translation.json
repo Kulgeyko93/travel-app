@@ -94,7 +94,8 @@
   "header": {
     "main": "Main",
     "country": "Сountry",
-    "search": "Search"
+    "search": "Search",
+    "login": "Login"
   },
   "messages": {
     "error": "Error happened. Please, try again.",

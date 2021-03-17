@@ -94,7 +94,8 @@
   "header":{
     "main":"Asosiy",
     "country":"Mamlakat",
-    "search":"Izlash"
+    "search":"Izlash",
+    "login": "Kirish"
   },
   "messages":{
     "error":"Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
