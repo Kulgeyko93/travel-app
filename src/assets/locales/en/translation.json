@@ -37,7 +37,7 @@
     },
     "usa": {
       "capital": "Washington",
-      "name": "Unated States America",
+      "name": "United States America",
       "galery0": "Statue of Liberty This stern lady with a burning torch and tablet is a symbol not only of New York, but of the whole of America. Created in France, the Statue of Liberty has taken root very well on its island near Manhattan. All tourists without exception are photographed against its background, traditionally becoming in the pose with an outstretched arm that has become famous all over the world.",
       "galery1": "Mount Rushmore Yes, this is the very mountain on which the portraits of the four most famous presidents of the United States are carved: Thomas Jefferson, George Washington, Abraham Lincoln and Theodore Roosevelt. This otherwise unremarkable mountain is located in South Dakota, near the city of Keyston. The height of this bas-relief is 18.6 meters, so the presidents are visible from afar.",
       "galery2": "Golden Gate Bridge At one time, this suspension bridge in San Francisco was the longest in the world, but now it is far from the record holders, because it was built in 1937. However, the Golden Gate still looks very respectable and slender, being a recognized hallmark of the city, showing off on postcards and photos.",
@@ -68,9 +68,9 @@
       "galery5": "Wallaton Hall (Nottingham) Renaissance palace. At the beginning of the 20th century, the Nottingham authorities bought the building and placed there a natural history museum. The palace is located in a 500-acre park with a picturesque lake. The park is famous for its inhabitants - deer, squirrels, swans, fallow deer are found there. Everyone is free to walk around the park. Anyone can see them and take an unusual photo - a herd of deer against the background of the Elizabethan Palace.",
       "description": "England is not an independent state. It is a large administrative and political part of the United Kingdom of Great Britain and Northern Ireland. The largest cities in England are Sheffield, Birmingham, Manchester and Liverpool. It also includes the capital of Great Britain, London. England is located on the island of Great Britain and occupies 2/3 of its territory with an area of ​​130 395 sq. Km. Neighbors of the administrative part of the country are Scotland and Wales."
     },
-    "irland": {
+    "ireland": {
       "capital": "Dublin",
-      "name": "Irand",
+      "name": "Ireland",
       "galery0": "The Book of Kells A unique manuscript created in the 9th century, an invaluable work of art from the Early Middle Ages. The book is richly decorated with miniatures, patterns and Celtic designs. The priceless manuscript has been in the Trinity College Library since the 17th century. The book survived the devastating period of the Norman and Viking invasions of the British Isles and was treasured throughout the Middle Ages in the Abbey of Kells.",
       "galery1": "Dublin Castle The building was erected in the XIII century, for almost 700 years until 1922, the residence of the English governors was located on its territory. Most of the buildings of the castle complex were built in the 18th century, but nevertheless it retained the main features characteristic of Norman architecture - thick walls, powerful crenellated towers and pointed window openings. At the moment, the castle is open to the public, sometimes it is used to organize official receptions.",
       "galery2": "St. Patrick's Cathedral The first mention of the temple dates back to the XII century - at the time when it acquired the status of a cathedral, but there is no reliable evidence of the time of the building's construction. In the 16th century, St. Patrick's Cathedral passed to the Anglican Church of Ireland, despite the dissatisfaction of Catholic parishioners. One of the deans of the temple ball is J. Swift - a famous Irish writer. In the XVIII-XIX centuries. the ceremony was held here for the knighthood of the Order of St. Patrick.",
@@ -95,6 +95,10 @@
     "main": "Main",
     "country": "Сountry",
     "search": "Search"
+  },
+  "messages": {
+    "error": "Error happened. Please, try again.",
+    "learn_more": "Learn more"
   }
 }
 

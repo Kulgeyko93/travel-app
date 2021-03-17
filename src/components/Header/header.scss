@@ -1,5 +1,12 @@
-.navbar-nav {
+.navbar {
+  width: 100%;
+}
+
+.form {
   display: flex;
-  align-items: center;
-  justify-content: space-around impor !important;
+  border: 2px solid blue;
+}
+
+.lang {
+  margin-right: 10px;
 }
