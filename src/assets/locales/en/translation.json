@@ -95,10 +95,20 @@
     "main": "Main",
     "country": "Сountry",
     "search": "Search",
-    "login": "Login"
+    "auth": "Authorization",
+    "login": "Login",
+    "register": "Register"
   },
   "messages": {
     "error": "Error happened. Please, try again.",
     "learn_more": "Learn more"
+  },
+  "auth": {
+    "username": "Username",
+    "enter_username": "Enter username",
+    "password": "Password",
+    "enter_password": "Enter password",
+    "confirm_password": "Confirm password",
+    "upload": "Upload photo"
   }
 }

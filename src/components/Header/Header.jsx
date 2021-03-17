@@ -1,15 +1,32 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Form, FormControl, Button, Col, InputGroup } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { Search } from 'react-bootstrap-icons';
 import Dropdown from '../Dropdown/DropDown';
 import './header.scss';
+import { selectUserData, selectUserStatus } from '../../features/user/userSlice';
+import { statuses } from '../../features/constants';
 
 const { Row } = Form;
 
-const Header = () => {
+const Header = (props) => {
   const { t } = useTranslation();
+  const { setAuthShown } = props;
+  const userStatus = useSelector(selectUserStatus);
+  const userData = useSelector(selectUserData);
+
+  let authButton;
+  if (userStatus === statuses.SUCCEEDED) {
+    authButton = <Button variant="outline-info">{userData.name}</Button>;
+  } else {
+    authButton = (
+      <Button variant="outline-info" onClick={() => setAuthShown(true)}>
+        {t('header.login')}
+      </Button>
+    );
+  }
 
   return (
     <Navbar bg="dark" variant="dark" sticky="top" expand="sm">
@@ -35,9 +52,7 @@ const Header = () => {
               </InputGroup.Append>
             </InputGroup>
           </Col>
-          <Col xs={2}>
-            <Button variant="outline-info">{t('header.login')}</Button>
-          </Col>
+          <Col xs={2}>{authButton}</Col>
         </Row>
       </Form>
     </Navbar>

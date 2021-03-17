@@ -9,6 +9,10 @@ const Footer = () => (
         <a href="https://github.com/Kulgeyko93" target="_blank" rel="noreferrer">
           Kulgeyko93
         </a>
+        &nbsp;
+        <a href="https://github.com/burhonov" target="_blank" rel="noreferrer">
+          Burhonov
+        </a>
       </span>
     </div>
     <span>
