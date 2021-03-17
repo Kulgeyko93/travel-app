@@ -5,6 +5,7 @@ const initialState = {
   lang: 'en',
   country: 'brazil',
   indexCountry: 0,
+  isMain: false,
 };
 
 const reducers = createReducer(initialState, {
