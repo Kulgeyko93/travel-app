@@ -12,9 +12,12 @@ import AuthModal from './components/AuthModal';
 
 const App = () => {
   const [authShown, setAuthShown] = useState(false);
+  const openModal = () => setAuthShown(true);
+  const closeModal = () => setAuthShown(false);
+
   return (
     <>
-      <Header setAuthShown={setAuthShown} />
+      <Header openModal={openModal} />
       <Container className="container__body" fluid>
         <Row className="container__main">
           <Switch>
@@ -25,7 +28,7 @@ const App = () => {
         <Row className="container__footer">
           <Footer />
         </Row>
-        <AuthModal show={authShown} setShow={setAuthShown} />
+        <AuthModal show={authShown} closeModal={closeModal} />
       </Container>
     </>
   );

@@ -97,6 +97,7 @@
     "search":"Izlash",
     "auth": "Avtorizatsiya",
     "login": "Kirish",
+    "logout": "Chiqish",
     "register": "Ro'yxatdan o'tish"
   },
   "messages":{

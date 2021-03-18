@@ -9,7 +9,12 @@ const initialState = {
 };
 
 export const fetchUser = createAsyncThunk('user/fetchUser', async () => {
-  const response = await api.get('/user', { withCredentials: true });
+  const response = await api.get('/user');
+  return response.data;
+});
+
+export const logout = createAsyncThunk('user/logout', async () => {
+  const response = await api.post('/logout', {});
   return response.data;
 });
 
@@ -28,6 +33,12 @@ const userSlice = createSlice({
     [fetchUser.rejected]: (state, action) => {
       state.status = statuses.FAILED;
       state.error = action.error;
+    },
+    [logout.pending]: (state) => {
+      state.status = statuses.LOADING;
+    },
+    [logout.fulfilled]: (state) => {
+      state.data = null;
     },
   },
 });
