@@ -1,0 +1,27 @@
+.main__page {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .route__btn {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.card-deck.deck {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-content: space-around;
+}
+
+.card-img-top {
+  height: 200px;
+}

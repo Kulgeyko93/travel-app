@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  align-items: center;
+}
+
+.mr-rd {
+  margin-right: 10px;
+}
+
+.form {
+  display: flex;
+  border: 2px solid blue;
+}
+
+.form > .form-row {
+  max-width: 335px;
+  margin-right: 5px;
+}
