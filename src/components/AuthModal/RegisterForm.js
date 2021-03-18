@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import axios from '../../api';
-import { fetchUser } from '../../features/user/userSlice';
+import InlineSpinner from '../common/InlineSpinner';
 
 const FIELD_NAMES = {
   USERNAME: 'username',
@@ -13,7 +13,7 @@ const FIELD_NAMES = {
 };
 
 export default function RegisterForm(props) {
-  const { setShow } = props;
+  const { openLogin } = props;
   const { t } = useTranslation();
   const dispatch = useDispatch();
 
@@ -56,10 +56,9 @@ export default function RegisterForm(props) {
 
   useEffect(() => {
     if (submittedData) {
-      dispatch(fetchUser());
-      setTimeout(() => setShow(false), 5000);
+      setTimeout(() => openLogin(), 3000);
     }
-  }, [setShow, submittedData, dispatch]);
+  }, [openLogin, submittedData, dispatch]);
 
   let content;
   if (submittedData) {
@@ -92,6 +91,7 @@ export default function RegisterForm(props) {
         </Form.Group>
 
         <Button disabled={!submittable} variant="primary" type="submit">
+          {!submittable && <InlineSpinner />}
           {t('header.register')}
         </Button>
       </Form>

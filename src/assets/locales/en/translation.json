@@ -97,6 +97,7 @@
     "search": "Search",
     "auth": "Authorization",
     "login": "Login",
+    "logout": "Logout",
     "register": "Register"
   },
   "messages": {
